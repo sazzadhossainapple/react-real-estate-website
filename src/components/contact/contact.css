@@ -1,0 +1,67 @@
+.contact {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 4rem calc((100vw - 1300px) / 2);
+  object-fit: cover;
+  /* margin-top: 4rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  opacity: 0.4s;
+  background-color: rgba(41, 39, 39, 0.479);
+}
+
+.contactContainer {
+  z-index: 1;
+  width: 50%;
+  padding: 4rem 4rem;
+  color: #fff;
+}
+.contactTitle {
+  font-size: 50px;
+}
+.contactForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.contactForm > label {
+  margin: 15px 0;
+}
+.contactInput {
+  padding: 14px;
+  background-color: transparent;
+  /* border-top: none;
+  border-left: none;
+  border-right: none; */
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  font-size: 14px;
+  color: #fff;
+}
+.contactInput:focus {
+  outline: none;
+}
+::placeholder {
+  color: #fff;
+}
+.submitButton {
+  margin-top: 20px;
+}
+@media (max-width: 780px) {
+  .contactContainer {
+    width: 100%;
+  }
+}

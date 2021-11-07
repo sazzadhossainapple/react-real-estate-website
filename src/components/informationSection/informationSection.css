@@ -1,0 +1,55 @@
+.infoSection {
+  margin: 100px 60px 100px 60px;
+}
+.infoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+}
+.infoLeft {
+  flex: 60%;
+}
+.infoImage {
+  object-fit: cover;
+  width: 95%;
+  height: 100%;
+}
+.infoRight {
+  flex: 40%;
+}
+.infoHeading > p {
+  margin-bottom: 30px;
+  font-size: clamp(1.2rem, 5vw, 3rem);
+  text-transform: uppercase;
+}
+.infoHeading > span {
+  color: #6e6b6b;
+  font-size: clamp(0.5rem, 3vw, 1.5rem);
+  text-transform: uppercase;
+}
+.infoDesc > p {
+  padding-bottom: 30px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #444;
+  text-align: justify;
+}
+.ioMdArrowRoundForward {
+  margin-left: 0.5rem;
+}
+@media (max-width: 780px) {
+  .infoSection {
+    margin: 30px 20px;
+  }
+  .infoLeft,
+  .infoRight {
+    flex: 100%;
+  }
+  .infoHeading {
+    margin: 20px 0px;
+  }
+  .infoImage {
+    height: 100%;
+    width: 100%;
+  }
+}

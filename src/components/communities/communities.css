@@ -1,0 +1,74 @@
+.communitiesContainer {
+  min-height: 100vh;
+  padding: 5rem calc((100vw - 1300px) / 2);
+  color: #fff;
+}
+.communitiesHeading {
+  font-size: clamp(1.2rem, 5vw, 3rem);
+  text-align: center;
+  color: #000;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+}
+.communitiesHeading > p {
+  color: #6e6b6b;
+  font-size: clamp(0.5rem, 3vw, 1.5rem);
+}
+.communitiesWrapper {
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* grid-template-columns: auto auto auto auto; */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 10px;
+  justify-items: center;
+  padding: 0 2rem;
+  object-fit: cover;
+}
+
+.communitiesCard {
+  line-height: 2;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 10x;
+  transition: 0.2s ease;
+}
+.communitiesCard > img {
+  max-height: 100%;
+  max-width: 100%;
+  position: relative;
+  border-radius: 10px;
+  filter: brightness(70%);
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.communitiesCard:hover > img {
+  filter: brightness(100%);
+}
+.communitiesInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 2rem;
+}
+.textWarp {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 330px;
+}
+.textTitle {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  color: #fff;
+}
+.communitiesButton {
+  position: absolute;
+  top: 370px;
+}
+
+@media screen and (max-width: 768px) {
+  .communitiesInfo {
+    padding: 0 1rem;
+  }
+}

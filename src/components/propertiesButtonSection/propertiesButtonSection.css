@@ -1,0 +1,57 @@
+.propertiesButtonSection {
+  padding: 5rem calc((100vw - 1300px) / 2);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.propestiesButtonItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.propestiesButtonItems > div {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.propestiesButtonItemButton {
+  padding: 15px 50px;
+  font-size: 18px;
+  border: 2px solid #000;
+  cursor: pointer;
+  display: flex;
+  color: #000;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.propestiesButtonItemButton:hover {
+  padding: 15px 50px;
+  font-size: 18px;
+  border: 2px solid #000;
+  cursor: pointer;
+  display: flex;
+  color: #cd853f;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.propestiesButtonItemButton > span {
+  padding: 1.5rem 3rem;
+}
+.propestiesButtonItemButton:hover {
+  transform: translateY(-2px);
+}
+@media (max-width: 780px) {
+  .propestiesButtonItems > div {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+}

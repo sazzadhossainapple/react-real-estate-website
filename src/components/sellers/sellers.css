@@ -1,0 +1,159 @@
+.sellersSection {
+  margin: 100px 60px 100px 60px;
+}
+.sellersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.sellersContainerCenter {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.centerSellerCenter {
+  width: 50%;
+}
+
+.sellersLeft {
+  flex: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sellersImage {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  box-shadow: 2px 4px 10px 4px rgba(0, 0, 0, 0.5);
+}
+.sellersRight {
+  flex: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sellerInfoLeft {
+  margin-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sellerInfoRight {
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sellersHeading > p {
+  margin-bottom: 30px;
+  font-size: clamp(1.2rem, 5vw, 3rem);
+  text-transform: uppercase;
+}
+.sellersCenterHeading > p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: clamp(1.2rem, 5vw, 3rem);
+  text-transform: uppercase;
+}
+.sellersHeading > span {
+  color: #6e6b6b;
+  font-size: clamp(0.5rem, 3vw, 1.5rem);
+  text-transform: uppercase;
+}
+.sellersDesc > p {
+  padding-bottom: 30px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #444;
+  text-align: justify;
+}
+.ioMdArrowRoundForward {
+  margin-left: 0.5rem;
+}
+.sellerBoxContanier {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  margin: 40px auto;
+  justify-content: center;
+}
+.sellerBoxs {
+  padding: 0px 2rem;
+}
+.sellerBox {
+  position: relative;
+  width: calc(350px - 30px);
+  height: calc(300px - 50px);
+  margin: 10px;
+  box-sizing: border-box;
+  background-color: #1a1919;
+}
+.sellerBoxImage {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 88%;
+  top: 1rem;
+  left: -5%;
+  object-fit: cover;
+  box-shadow: 2px 4px 10px 4px rgba(0, 0, 0, 0.5);
+}
+.sellerBoxContent {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  left: 0;
+  height: calc(100% - 50px);
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+.sellerBoxContent > h3 {
+  text-shadow: 2px 2px #ff0000;
+  font-size: 22px;
+  padding: 0;
+  color: #fff;
+}
+.sellerBoxButton {
+  margin: 1rem 5rem;
+}
+
+@media (max-width: 780px) {
+  .sellersSection {
+    margin: 30px 20px;
+  }
+  .sellersLeft,
+  .sellersRight {
+    flex: 100%;
+  }
+  .sellersImage {
+    height: 100%;
+    width: 100%;
+  }
+  .sellerInfoRight {
+    margin-left: 0;
+  }
+  .sellerInfoLeft {
+    margin-right: 0;
+  }
+  .centerSellerCenter {
+    width: 100%;
+  }
+  .sellerBoxs {
+    padding: 0 0;
+  }
+  .sellerBox {
+    width: 95%;
+  }
+  /* .sellerBoxButton {
+  } */
+}

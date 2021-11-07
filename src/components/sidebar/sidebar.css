@@ -1,0 +1,84 @@
+.sidebarsItem {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.sidebarsTitle {
+  margin: 10px;
+  padding: 5px;
+  width: 40%;
+  border-top: 1px solid #a7a4a4;
+  border-bottom: 1px solid #a7a4a4;
+  font-size: 12px;
+  color: #222;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+}
+.sidebarsItem > img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+.sidebarsItem > p {
+  padding-top: 30px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.sidebarsNumber {
+  padding: 16px;
+  font-size: 18px;
+}
+.sidebarsListItem {
+  display: inline-block;
+  width: 50%;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.sidebarsSocial {
+  margin: 15px 0px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebarsIcon {
+  font-size: 18px;
+  margin-left: 10px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.sidebarsIcon:hover {
+  color: #cd853f;
+}
+.sideBarButton {
+  border: 2px solid #000;
+  cursor: pointer;
+  display: flex;
+  margin-bottom: 2rem;
+  color: #cd853f;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  transition: 0.3s;
+  font-size: 18px;
+}
+.sideBarButton > span {
+  padding: 1.5rem 3rem;
+}
+.sideBarButton:hover {
+  transform: translateY(-2px);
+}
+
+/* @media (max-width: 780px) {
+  .postsLeft,
+  .postsRight {
+    flex: 100%;
+  }
+  .blogCard {
+    width: 100%;
+    margin: 8px 0px;
+  }
+} */

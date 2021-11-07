@@ -1,0 +1,4 @@
+.home {
+  display: flex;
+  padding: 3rem calc((100vw - 1300px) / 2);
+}

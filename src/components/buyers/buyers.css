@@ -1,0 +1,81 @@
+.buyersSection {
+  margin: 100px 60px 100px 60px;
+}
+.buyersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.buyersLeft {
+  flex: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.buyersImage {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  /* box-shadow: 2px 4px 10px 4px rgba(0, 0, 0, 0.5); */
+}
+.buyersRight {
+  flex: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.buyersInfoLeft {
+  padding-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.buyersInfoRight {
+  padding-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buyersHeading > p {
+  margin-bottom: 30px;
+  font-size: clamp(1.2rem, 5vw, 3rem);
+  text-transform: uppercase;
+}
+
+.buyersHeading > span {
+  color: #6e6b6b;
+  font-size: clamp(0.5rem, 3vw, 1.5rem);
+  text-transform: uppercase;
+}
+.buyersDesc > p {
+  padding-bottom: 30px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #444;
+  text-align: justify;
+}
+.ioMdArrowRoundForward {
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 780px) {
+  .buyersSection {
+    margin: 30px 20px;
+  }
+  .buyersLeft,
+  .buyersRight {
+    flex: 100%;
+  }
+  .buyresImage {
+    height: 100%;
+    width: 100%;
+  }
+
+  .buyersInfoLeft {
+    padding-right: 0px;
+  }
+  .buyersInfoRight {
+    padding-left: 0px;
+  }
+}
