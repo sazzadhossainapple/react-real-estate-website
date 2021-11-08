@@ -49,13 +49,13 @@
   object-fit: cover;
 }
 .headerTitle {
-  position: relative;
+  position: absolute;
   z-index: 10;
-  max-width: 1600px;
-  width: calc(100%-100px);
+  max-width: calc(100%-100px);
   color: #fff;
   background: rgba(31, 31, 32, 0.253);
   padding: 10px 40px;
+  text-align: center;
 }
 .headerTitle > h1 {
   font-size: clamp(1rem, 8vw, 2rem);
