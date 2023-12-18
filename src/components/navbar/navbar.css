@@ -1,125 +1,131 @@
 .nav {
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem 2rem;
-  z-index: 100;
-  position: fixed;
-  width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
 }
 .nav.active {
-  background: #cd853f;
+    background: #cd853f;
 }
 .logo {
-  display: flex;
-  align-items: center;
-  padding: 0 1rem;
-  font-size: 24px;
-  height: 100%;
-  cursor: pointer;
-  color: #fff;
-  font-style: italic;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    font-size: 24px;
+    height: 100%;
+    cursor: pointer;
+    color: #fff;
+    font-style: italic;
 }
 .navList {
-  display: flex;
-  color: #fff;
-  padding: 0.7rem 1rem;
-  list-style: none;
+    display: flex;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    list-style: none;
 }
 .navListItem {
-  font-size: 18px;
-  cursor: pointer;
-  align-items: center;
-  margin-right: 30px;
-  padding-left: 12px;
-  padding-right: 12px;
-  letter-spacing: 1px;
-  height: 10vh;
+    font-size: 18px;
+    cursor: pointer;
+    align-items: center;
+    margin-right: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
+    letter-spacing: 1px;
+    height: 10vh;
 }
 
 .navListItem::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 1px;
-  background: rgb(245, 243, 243);
-  transition: width 0.3s;
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: rgb(245, 243, 243);
+    transition: width 0.3s;
 }
 .navListItem:hover::after {
-  width: 100%;
+    width: 100%;
 }
 .navContactButton {
-  display: flex;
-  margin-right: 24px;
-  cursor: pointer;
-  outline: none;
-  border: none;
-  transition: 0.3s;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 20px;
-  background-color: #000;
-  color: #fff;
-  font-size: 16px;
+    display: flex;
+    margin-right: 24px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: 0.3s;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
 }
 .navContactButton:hover {
-  transform: translateY(-2px);
+    transform: translateY(-2px);
 }
 .menuBars {
-  display: none;
+    display: none;
+}
+.drop-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
 }
 
 @media screen and (max-width: 768px) {
-  .navList {
-    display: none;
-  }
-  .navContactButton {
-    display: none;
-  }
-  .menuBars {
-    display: block;
-    color: #fff;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-50%, 25%);
-  }
-  .navListMobile {
-    position: absolute;
-    display: block;
-    list-style: none;
-    background-color: #cd853f;
-    left: 0;
-    top: 0;
-    padding: 25px 0px;
-    transition: all 0.5s ease-out;
-    width: 100%;
-  }
-  .navListItem {
-    color: #fff;
-    text-align: center;
-    padding: 32px;
-    width: 100%;
-    transition: all 0.5s ease;
-  }
-  .navContactButton {
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-    transition: all 0.5s ease;
-  }
-  .navListItem:hover::after {
-    display: none;
-  }
+    .navList {
+        display: none;
+    }
+    .navContactButton {
+        display: none;
+    }
+    .menuBars {
+        display: block;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-50%, 25%);
+    }
+    .navListMobile {
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: #cd853f;
+        left: 0;
+        top: 0;
+        padding: 25px 0px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+    }
+    .navListItem {
+        color: #fff;
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+        transition: all 0.5s ease;
+    }
+    .navContactButton {
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+        transition: all 0.5s ease;
+    }
+    .navListItem:hover::after {
+        display: none;
+    }
 
-  .faBars {
-    height: 38px;
-    width: 38px;
-  }
-  .faTimes {
-    height: 38px;
-    width: 38px;
-  }
+    .faBars {
+        height: 38px;
+        width: 38px;
+    }
+    .faTimes {
+        height: 38px;
+        width: 38px;
+    }
 }
