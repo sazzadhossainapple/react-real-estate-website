@@ -1,46 +1,49 @@
 .newHome {
-  width: 100%;
-  height: 100%;
-  padding: 4rem, 0rem;
+    width: 100%;
+    height: 100%;
+    padding: 1rem, 0rem;
 }
 .newHomeContainer {
-  padding: 0rem calc((100vw - 1300px) / 2);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+    padding: 0rem calc((100vw - 1300px) / 2);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
 }
 .newHomeLeft {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  line-height: 1.4;
-  padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    line-height: 1.4;
+    padding: 1rem 2rem;
 }
 .newHomeLeft > h1 {
-  margin-bottom: 1rem;
-  font-size: clamp(1.5rem, 6vw, 2.5rem);
-  font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+    font-weight: 400;
 }
 .newHomeLeft > p {
-  margin-bottom: 2rem;
-  font-size: 16px;
-  line-height: 24px;
+    margin-bottom: 2rem;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .newHomeRight {
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
 }
 .newHomeRight > img {
-  width: 100%;
-  height: 80%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 @media (max-width: 780px) {
-  .newHomeContainer {
-    grid-template-columns: 1fr;
-  }
+    .newHomeContainer {
+        grid-template-columns: 1fr;
+    }
 }
