@@ -1,54 +1,58 @@
 .postLeftWrapper {
-  display: flex;
-  flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
 }
 .blogCard {
-  margin: 0px 8px 14px 8px;
-  width: 280px;
-  height: 600px;
-  padding: 2rem 1rem;
-  background: #fff;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    margin: 0px 0px 24px 0px;
+    /* width: 280px; */
+    height: 600px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
 }
 .blogCard > img {
-  max-width: 100%;
-  height: 330px;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
+    max-width: 100%;
+    height: 330px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .blogCard > img:hover {
-  cursor: pointer;
-  filter: brightness(60%);
-  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor: pointer;
+    filter: brightness(60%);
+    transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .blogInfo > h1 {
-  font-size: 18px;
-  font-weight: 700;
-  margin-top: 15px;
-  cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 15px;
+    cursor: pointer;
 }
 .blogInfo > p {
-  font-size: 14px;
-  color: #444;
-  line-height: 24px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+    font-size: 14px;
+    color: #444;
+    line-height: 24px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 @media (max-width: 780px) {
-  .blogCard {
-    width: 100%;
-    margin: 8px 0px;
-  }
+    .blogCard {
+        width: 100%;
+        margin: 8px 0px;
+    }
+    .postLeftWrapper {
+        grid-template-columns: 1fr;
+    }
 }

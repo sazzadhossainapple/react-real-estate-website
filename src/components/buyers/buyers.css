@@ -1,81 +1,80 @@
 .buyersSection {
-  margin: 100px 60px 100px 60px;
+    padding: 5rem calc((100vw - 1300px) / 2);
 }
 .buyersContainer {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 .buyersLeft {
-  flex: 50%;
-  display: flex;
-  flex-wrap: wrap;
+    flex: 50%;
+    display: flex;
+    flex-wrap: wrap;
 }
 .buyersImage {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  /* box-shadow: 2px 4px 10px 4px rgba(0, 0, 0, 0.5); */
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    /* box-shadow: 2px 4px 10px 4px rgba(0, 0, 0, 0.5); */
 }
 .buyersRight {
-  flex: 50%;
-  display: flex;
-  flex-wrap: wrap;
+    flex: 50%;
+    display: flex;
+    flex-wrap: wrap;
 }
 .buyersInfoLeft {
-  padding-right: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-wrap: wrap;
+    padding-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .buyersInfoRight {
-  padding-left: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-wrap: wrap;
+    padding-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .buyersHeading > p {
-  margin-bottom: 30px;
-  font-size: clamp(1.2rem, 5vw, 3rem);
-  text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: clamp(1.2rem, 5vw, 3rem);
+    text-transform: uppercase;
 }
 
 .buyersHeading > span {
-  color: #6e6b6b;
-  font-size: clamp(0.5rem, 3vw, 1.5rem);
-  text-transform: uppercase;
+    color: #6e6b6b;
+    font-size: clamp(0.5rem, 3vw, 1.5rem);
+    text-transform: uppercase;
 }
 .buyersDesc > p {
-  padding-bottom: 30px;
-  font-size: 16px;
-  line-height: 26px;
-  color: #444;
-  text-align: justify;
+    padding-bottom: 30px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #444;
+    text-align: justify;
 }
 .ioMdArrowRoundForward {
-  margin-left: 0.5rem;
+    margin-left: 0.5rem;
 }
 
 @media (max-width: 780px) {
-  .buyersSection {
-    margin: 30px 20px;
-  }
-  .buyersLeft,
-  .buyersRight {
-    flex: 100%;
-  }
-  .buyresImage {
-    height: 100%;
-    width: 100%;
-  }
+    .buyersLeft,
+    .buyersRight {
+        flex: 100%;
+    }
+    .buyresImage {
+        height: 100%;
+        width: 100%;
+    }
 
-  .buyersInfoLeft {
-    padding-right: 0px;
-  }
-  .buyersInfoRight {
-    padding-left: 0px;
-  }
+    .buyersInfoLeft {
+        padding-right: 0px;
+    }
+    .buyersInfoRight {
+        padding-left: 0px;
+    }
 }
